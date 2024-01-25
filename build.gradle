@@ -18,7 +18,11 @@ buildscript {
 		}
 	}
 }
-
+ sourceSets {
+     main {
+       compileClasspath += configurations.provided
+      }
+ }
 apply plugin: "net.saliman.properties"
 
 apply plugin: "com.liferay.plugin"
