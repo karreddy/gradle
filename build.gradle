@@ -4,7 +4,7 @@ buildscript {
 		compileOnly(group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "4.1.2") {
 			exclude group: "biz.aQute.bnd", module: "biz.aQute.bnd"
 		}
-		compileOnly group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+		classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
 	}
 
 	repositories {
