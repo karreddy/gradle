@@ -1,5 +1,5 @@
 dependencies {
-	compile project(":modules:pll-employee-directory-schema:pll-employee-directory-schema-api")
+	compileOnly project(":modules:pll-employee-directory-schema:pll-employee-directory-schema-api")
 
 	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
 }
