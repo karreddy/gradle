@@ -1,24 +1,24 @@
 // Check GETTING_STARTED.markdown for information regarding usage.
+buildscript {
+	dependencies {
+		classpath group: "biz.aQute.bnd", name: "biz.aQute.bnd", version: "5.2.0"
+		classpath(group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "4.1.2") {
+			exclude group: "biz.aQute.bnd", module: "biz.aQute.bnd"
+		}
+		classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+	}
+
+	repositories {
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+
+		maven {
+			url "https://repository.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+apply plugin: "net.saliman.properties"
 
 apply plugin: "com.liferay.plugin"
-dependencies {
-	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
-}
-dependencies {
-	compile project(":modules:pll-employee-directory-schema:pll-employee-directory-schema-api")
-
-	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
-}
-
-buildService {
-	apiDir = "../pll-employee-directory-schema-api/src/main/java"
-}
-
-group = "com.pll.employee.directory"
-dependencies {
-
-compile project(":modules:pll-employee-directory-schema:pll-employee-directory-schema-api")
-	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
-
-	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.0"
-}
