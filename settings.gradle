@@ -20,8 +20,8 @@ buildscript {
 
 apply plugin: "net.saliman.properties"
 
-include 'modules:pll-employee-directory-schema'
-include 'modules:pll-employee-directory'
+include 'modules'
+include 'themes'
 
 //apply plugin: "com.liferay.workspace"
 
