@@ -16,17 +16,6 @@ buildscript {
 			url "https://repository.liferay.com/nexus/content/groups/public"
 		}
 	}
-}
-allprojects {
-    repositories {
-        
-    }
-}
-subprojects {
-    apply plugin: 'net.saliman.properties'
-    // apply plugin: 'com.liferay.workspace'
-}
 
-	
 apply plugin: "net.saliman.properties"
 //apply plugin: "com.liferay.workspace"
