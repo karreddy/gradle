@@ -17,6 +17,11 @@ buildscript {
 		}
 	}
 }
+allprojects {
+    repositories {
+        
+    }
+}
 
 apply plugin: "net.saliman.properties"
 //apply plugin: "com.liferay.workspace"
