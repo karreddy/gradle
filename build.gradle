@@ -18,17 +18,6 @@ buildscript {
 		}
 	}
 }
-allprojects {
-	repositories {
-		maven {
-			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
-		}
-
-		maven {
-			url "https://repository.liferay.com/nexus/content/groups/public"
-		}
-	}
-}
 apply plugin: "net.saliman.properties"
 
 apply plugin: "com.liferay.plugin"
