@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:pll-employee-directory-schema:pll-employee-directory-schema-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../pll-employee-directory-schema-api/src/main/java"
+}
+
+group = "com.pll.employee.directory"
