@@ -1,5 +1,2 @@
 include 'modules'
 include 'themes'
-project(':modules').buildFileName = 'build.gradle'
-project(':themes').buildFileName = 'build.gradle'
-
