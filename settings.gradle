@@ -1,4 +1,8 @@
 include 'modules'
+include 'modules:pll-employee-directory-schema'
+include 'pll-employee-directory'
+include 'pll-employee-directory-schema-api'
+include 'pll-employee-directory-schema-service'
 include 'themes'
 
 
