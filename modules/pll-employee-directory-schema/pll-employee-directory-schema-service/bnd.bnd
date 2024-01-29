@@ -1,6 +1,0 @@
-Bundle-Name: pll-employee-directory-schema-service
-Bundle-SymbolicName: com.pll.employee.directory.service
-Bundle-Version: 1.0.0
-Liferay-Require-SchemaVersion: 1.0.0
-Liferay-Service: true
--dsannotations-options: inherit
