@@ -1,4 +1,0 @@
-Bundle-Name: pll-employee-directory
-Bundle-SymbolicName: com.pll.employee.directory
-Bundle-Version: 1.0.0
-Export-Package: com.pll.employee.directory.constants
