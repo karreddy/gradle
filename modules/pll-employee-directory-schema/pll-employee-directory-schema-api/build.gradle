@@ -1,3 +1,6 @@
+plugins {
+    id 'java'
+}
 dependencies {
 	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
 }
