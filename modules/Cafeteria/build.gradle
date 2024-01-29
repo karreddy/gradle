@@ -5,3 +5,4 @@ dependencies {
 	
 	  compileOnly project(":modules:Petronet_Service:Petronet_Service-api")
 	compileOnly project(":modules:Petronet_Service:Petronet_Service-service")
+}
