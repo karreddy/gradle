@@ -2,5 +2,5 @@ plugins {
     id 'java'
 }
 dependencies {
-	 implementation group: "com.liferay.portal", name: "release.dxp.api"
+	 implementation "com.liferay.portal", name: "release.dxp.api"
 }
