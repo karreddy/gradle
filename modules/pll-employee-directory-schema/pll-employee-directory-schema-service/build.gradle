@@ -1,12 +1,13 @@
-
 dependencies {
-	compileOnly project(":modules:pll-employee-directory-schema:pll-employee-directory-schema-api")
-
-	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+    // Dependency included in both compile and runtime classpaths
+    implementation project(":modules:pll-employee-directory-schema:pll-employee-directory-schema-api")
+    
+    // Another dependency included in both compile and runtime classpaths
+    implementation group: "com.liferay.portal", name: "release.dxp.api"
 }
 
 buildService {
-	apiDir = "../pll-employee-directory-schema-api/src/main/java"
+    apiDir = "../pll-employee-directory-schema-api/src/main/java"
 }
 
 group = "com.pll.employee.directory"
