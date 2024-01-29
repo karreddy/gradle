@@ -1,12 +1,36 @@
+plugins {
+    id 'java'
+}
 
 dependencies {
-	compileOnly project(":modules:pll-employee-directory-schema:pll-employee-directory-schema-api")
-
-	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+    // Dependencies for Service Builder
+    compileOnly group: "com.liferay.portal", name: "release.dxp.api"
 }
 
+// Configuration for Liferay Service Builder
 buildService {
-	apiDir = "../pll-employee-directory-schema-api/src/main/java"
+    // Directory where generated service classes should be placed
+    apiDir = file("../pll-employee-directory-schema-api/src/main/java")
+
+    // Specify the version of Liferay Service Builder to use (optional)
+    // version = '7.4.0'
 }
 
-group = "com.pll.employee.directory"
+// OSGi bundle configuration
+group = 'com.pll.employee.directory'
+version = '1.0.0'
+
+// Specify additional metadata for the generated OSGi bundle
+// For example, bundle name, symbolic name, version, etc.
+// You can customize this as per your requirements
+jar {
+    manifest {
+        attributes(
+            'Bundle-Name': 'pll-employee-directory-schema-service',
+            'Bundle-SymbolicName': 'com.pll.employee.directory.service',
+            'Bundle-Version': version,
+            'Liferay-Require-SchemaVersion': '1.0.0',
+            'Liferay-Service': true
+        )
+    }
+}
