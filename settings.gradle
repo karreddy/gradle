@@ -22,5 +22,5 @@ apply plugin: "com.liferay.workspace"
 
 include 'modules'
 include 'modules:Cafeteria'
-include 'modules:pll-employee-directory-schema-api'
-include 'modules:pll-employee-directory-schema-service'
+include 'modules:Petronet_Service-api'
+include 'modules:Petronet_Service-service'
