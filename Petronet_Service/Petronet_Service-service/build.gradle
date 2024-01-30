@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:Petronet_Service:Petronet_Service-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../Petronet_Service-api/src/main/java"
+}
+
+group = "com.petronet"
