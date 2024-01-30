@@ -20,7 +20,3 @@ buildscript {
 apply plugin: "net.saliman.properties"
 apply plugin: "com.liferay.workspace"
 
-include 'modules'
-include 'modules:Cafeteria'
-include 'modules:Petronet_Service-api'
-include 'modules:Petronet_Service-service'
