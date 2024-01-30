@@ -1,23 +1,20 @@
 buildscript {
-	dependencies {
-		classpath group: "biz.aQute.bnd", name: "biz.aQute.bnd", version: "5.2.0"
-		classpath(group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "4.1.2")
-		classpath group: "com.liferay", name: "com.liferay.gradle.plugins", version: "latest.release"
-		{
-			exclude group: "biz.aQute.bnd", module: "biz.aQute.bnd"
-		}
-		classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
-	}
+    dependencies {
+        classpath group: "biz.aQute.bnd", name: "biz.aQute.bnd", version: "5.2.0"
+        classpath(group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "4.1.2")
+        classpath group: "com.liferay", name: "com.liferay.gradle.plugins", version: "latest.release"
+        classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+    }
 
-	repositories {
-		maven {
-			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
-		}
+    repositories {
+        maven {
+            url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+        }
 
-		maven {
-			url "https://repository.liferay.com/nexus/content/groups/public"
-		}
-	}
+        maven {
+            url "https://repository.liferay.com/nexus/content/groups/public"
+        }
+    }
 }
 
 apply plugin: "net.saliman.properties"
@@ -30,4 +27,3 @@ include 'modules:pll-employee-directory-schema-service'
 include 'themes'
 include 'themes:petronet-dashboard'
 include 'themes:petronet-theme'
-
