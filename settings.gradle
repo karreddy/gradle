@@ -21,4 +21,11 @@ buildscript {
 apply plugin: "net.saliman.properties"
 //apply plugin: "com.liferay.workspace"
 
+include 'modules'
+include 'modules:Cafeteria'
+include 'modules:pll-employee-directory-schema-api'
+include 'modules:pll-employee-directory-schema-service'
+include 'themes'
+include 'themes:petronet-dashboard'
+include 'themes:petronet-theme'
 
