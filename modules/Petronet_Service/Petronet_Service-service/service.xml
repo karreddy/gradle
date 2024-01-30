@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.petronet">
+	<namespace>Pll</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="CafeteriaCouponDetails" remote-service="false" uuid="false">
+
+	<!-- PK fields -->
+
+		<column name="cafId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="createDate" type="Date" />
+
+		<!-- Other fields -->
+
+	    <column name="emplooyeeName" type="String" />
+		<column name="reqFor" type="String" />
+		<column name="item" type="String" />
+		<column name="itemQuantity" type="long" />
+		<column name="itemValue" type="long" />
+
+		<!-- Finder methods -->
+
+		<finder name="BYuserId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		
+		<finder name="itemAndInv" return-type="Collection">
+			<finder-column name="item" />
+		</finder>
+		
+	</entity>
+	
+	<entity local-service="true" name="CafeVendorMaster" remote-service="false" uuid="false">
+
+		<column name="vendorId" primary="true" type="long" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<!-- Other fields -->
+	    <column name="vendorName" type="String" />
+		<column name="vendorAddress" type="String" />
+
+	</entity>
+	
+	<entity local-service="true" name="CafeItemMaster" remote-service="false" uuid="false">
+
+		<column name="itemId" primary="true" type="long" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<!-- Other fields -->
+	    <column name="itemDesc" type="String" />
+		<column name="itemUnits" type="String" />
+		
+		<finder name="BYitem" return-type="Collection">
+			<finder-column name="itemDesc" />
+		</finder>
+
+	</entity>
+	
+	<entity local-service="true" name="CafeStockEntry" remote-service="false" uuid="false">
+
+		<column name="stockEntryId" primary="true" type="long" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<!-- Other fields -->
+	    <column name="vendor" type="String" />
+		<column name="item" type="String" />
+		<column name="currentStockQty" type="long" />
+		<column name="quantity" type="long" />
+		<column name="itemUnitPrice" type="long" />
+		<column name="invoiceNo" type="String" />
+		<column name="invoiceDate" type="Date" />
+		<column name="totalAmount" type="long" />
+		
+
+		<finder name="item" return-type="Collection">
+			<finder-column name="item" />
+			<finder-column name="invoiceDate" />
+		</finder>
+		
+	</entity>
+	
+	<entity local-service="true" name="CafeInventory" remote-service="false" uuid="false">
+
+		<column name="inventoryId" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="date" type="Date" />
+	    <column name="inventory" type="String" />
+		<column name="item" type="String" />
+		<column name="quantity" type="long" />
+		<column name="currentStockquantity1" type="long" />
+		<column name="currentStockquantity2" type="long" />
+		<column name="itemUnitPrice" type="long" />
+		<column name="OneItemB" type="boolean" />
+		
+		<finder name="BYitem" return-type="Collection">
+			<finder-column name="item" />
+			<finder-column name="inventory" />
+			<finder-column name="date" />
+		</finder>
+
+	</entity>
+	
+	<entity local-service="true" name="CafeQuantityMaster" remote-service="false" uuid="false">
+
+		<column name="itemId" primary="true" type="long" />
+		<!-- Audit fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<!-- Other fields -->
+	    <column name="itemDesc" type="String" />
+		<column name="itemQuantity" type="long" />
+		
+		<finder name="item" return-type="Collection">
+			<finder-column name="itemDesc" />
+		</finder>
+
+	</entity>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</service-builder>
