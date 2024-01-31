@@ -9,3 +9,9 @@ buildService {
 }
 
 group = "com.petronet"
+jar {
+    exclude 'com/petronet/exception/**'
+    exclude 'com/petronet/model/**'
+    exclude 'com/petronet/service/**'
+    exclude 'com/petronet/service/persistence/**'
+}
