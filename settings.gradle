@@ -7,6 +7,7 @@ buildscript {
 		}
 	classpath group: "com.liferay", name: "com.liferay.gradle.plugins", version: "latest.release"
         classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
+	classpath "gradle.plugin.com.liferay:gradle-plugins-theme-builder:2.0.26"
     }
     repositories {
         maven {
@@ -21,3 +22,4 @@ buildscript {
 
 apply plugin: "net.saliman.properties"
 apply plugin: "com.liferay.workspace"
+apply plugin: "com.liferay.portal.tools.theme.builder"
