@@ -1,3 +1,6 @@
+plugins { 
+	id 'com.liferay.gradle.plugins.theme.builder' 
+}
 buildscript {
     dependencies {
         classpath group: "biz.aQute.bnd", name: "biz.aQute.bnd", version: "5.2.0"
