@@ -6,7 +6,6 @@ buildscript {
 			exclude group: "biz.aQute.bnd", module: "biz.aQute.bnd"
 		}
 	classpath group: "com.liferay", name: "com.liferay.gradle.plugins", version: "latest.release"
-	classpath group: "com.liferay", name: "com.liferay.gradle.plugins.theme.builder", version: "2.0.17"
         classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
     }
     repositories {
@@ -22,4 +21,3 @@ buildscript {
 
 apply plugin: "net.saliman.properties"
 apply plugin: "com.liferay.workspace"
-//apply plugin: "com.liferay.portal.tools.theme.builder"
