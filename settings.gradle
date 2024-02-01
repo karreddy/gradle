@@ -1,6 +1,3 @@
-plugins { 
-	id 'com.liferay.gradle.plugins.theme.builder' 
-}
 buildscript {
     dependencies {
         classpath group: "biz.aQute.bnd", name: "biz.aQute.bnd", version: "5.2.0"
@@ -25,3 +22,4 @@ buildscript {
 
 apply plugin: "net.saliman.properties"
 apply plugin: "com.liferay.workspace"
+apply plugin: "com.liferay.gradle.plugins.theme.builder"
