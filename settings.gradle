@@ -5,6 +5,7 @@ buildscript {
         {
 			exclude group: "biz.aQute.bnd", module: "biz.aQute.bnd"
 		}
+	compileOnly group: "com.liferay", name: "com.liferay.gradle.plugins", version: "latest.release"
         classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
     }
 
