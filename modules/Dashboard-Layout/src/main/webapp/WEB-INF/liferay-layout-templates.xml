@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE layout-templates PUBLIC "-//Liferay//DTD Layout Templates 7.4.0//EN" "http://www.liferay.com/dtd/liferay-layout-templates_7_4_0.dtd">
+
+<layout-templates>
+	<custom>
+		<layout-template id="Dashboard-Layout" name="Dashboard-Layout">
+			<template-path>/Dashboard-Layout.ftl</template-path>
+			<thumbnail-path>/Dashboard-Layout.png</thumbnail-path>
+		</layout-template>
+	</custom>
+</layout-templates>
