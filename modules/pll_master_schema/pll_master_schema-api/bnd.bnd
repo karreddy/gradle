@@ -1,0 +1,10 @@
+Bundle-Name: pll_master_schema-api
+Bundle-SymbolicName: pll_master_schema.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	pll_master_schema.exception,\
+	pll_master_schema.model,\
+	pll_master_schema.service,\
+	pll_master_schema.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../pll_master_schema-service/service.xml
