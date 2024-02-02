@@ -1,4 +1,0 @@
-Bundle-Name: bg-tracker-system
-Bundle-SymbolicName: com.bg.tracker
-Bundle-Version: 1.0.0
-Export-Package: com.bg.tracker.constants
