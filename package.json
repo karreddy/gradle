@@ -1,9 +1,0 @@
-{
-    "private": true,
-    "workspaces": {
-        "packages": [
-            "themes\\petronet-dashboard",
-            "themes\\petronet-theme"
-        ]
-    }
-}
