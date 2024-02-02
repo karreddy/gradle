@@ -1,1 +1,0 @@
-create index IX_4401273D on pll_master_Departments (locationId);
