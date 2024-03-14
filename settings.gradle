@@ -18,6 +18,14 @@ buildscript {
 		}
 	}
 }
-
+plugins {
+    id "org.sonarqube" version "3.3"
+}
+sonarqube {
+    properties {
+        property "sonar.host.url", "http://192.168.1.50:9000"
+        property "sonar.login", "squ_793aec95b2183e5323b42d3c4bb33d20d961c7ca"
+    }
+}
 apply plugin: "net.saliman.properties"
 apply plugin: "com.liferay.workspace"
