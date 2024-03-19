@@ -21,11 +21,6 @@ buildscript {
         }
     }
 }
-sonar {
-  properties {
-    property "sonar.projectKey", "pll_sonarqube"
-  }
-}
 apply plugin: "net.saliman.properties"
 apply plugin: "com.liferay.workspace"
 apply plugin: "org.sonarqube"
