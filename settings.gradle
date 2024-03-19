@@ -23,4 +23,4 @@ buildscript {
 }
 apply plugin: "net.saliman.properties"
 apply plugin: "com.liferay.workspace"
-apply plugin: "org.sonarqube"
+
