@@ -6,7 +6,7 @@ buildscript {
         }
         classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
         classpath group: "com.liferay", name: "com.liferay.gradle.plugins.theme.builder", version: "2.0.17"
-        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:4.0.0.2929"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.0.1"
     }
     repositories {
         maven {
@@ -16,10 +16,10 @@ buildscript {
         maven {
             url "https://repository.liferay.com/nexus/content/groups/public"
         }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
-}
-plugins {
-  id "org.sonarqube" version "3.5.0.2730"
 }
 sonar {
   properties {
