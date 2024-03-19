@@ -1,13 +1,11 @@
 plugins {
-    id "org.sonarqube" version "3.5.0.2730"
+  id "org.sonarqube" version "3.5.0.2730"
 }
 
-sonarqube {
-    properties {
-        property "sonar.projectKey", "pll_sonarqube"
-        property "sonar.host.url", "http://192.168.1.9:9001"
-        property "sonar.login", "squ_ac949188761128f73b6f4df5d64201b4b5e1cf3e"
-    }
+sonar {
+  properties {
+    property "sonar.projectKey", "pll_sonarqube"
+  }
 }
 
 // Check GETTING_STARTED.markdown for information regarding usage.
