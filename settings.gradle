@@ -21,11 +21,6 @@ buildscript {
     }
     }
 }
-
-plugins {
-    id "org.sonarqube" version "4.0.0.2929"
-}
-
 apply plugin: "net.saliman.properties"
 apply plugin: "com.liferay.workspace"
 apply plugin: "org.sonarqube"
